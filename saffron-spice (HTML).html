@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron & Spice – World Kitchen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pawni.css.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Est. 2024 &nbsp;·&nbsp; Fine World Dining</div>
+    <h1 class="hero-title">Saffron <em>&amp; Spice</em></h1>
+    <p class="hero-sub">Where Every Dish Tells a Story Across Continents</p>
+    <a href="#menu" class="hero-cta"><span>Explore the Menu</span></a>
+  </div>
+  <div class="scroll-hint">
+    <div class="line"></div>
+    <span style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;">SCROLL</span>
+  </div>
+</header>
+
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Saffron <span>&amp;</span> Spice</a>
+    <ul class="nav-links">
+      <li><a>Italian</a></li>
+      <li><a>Chinese</a></li>
+      <li><a>Indian</a></li>
+      <li><a>Desserts</a></li>
+      <li><a>Drinks</a></li>
+      <li><a>Reviews</a></li>
+    </ul>
+    <button class="cart-btn">
+      🛒 Cart <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</nav>
+
+
+<div class="page" id="menu">
+
+  
+  <div class="tab-bar">
+    <button class="tab-btn active">All Items</button>
+    <button class="tab-btn">Starters</button>
+    <button class="tab-btn">Main Course</button>
+    <button class="tab-btn">Sweet Dishes</button>
+    <button class="tab-btn">Desserts</button>
+    <button class="tab-btn">Drinks</button>
+  </div>
+
+  <div id="menu-results" style="scroll-margin-top:80px"></div>
+
+  
+  <div class="cuisine-block" id="italian">
+    <div class="cuisine-accent red"></div>
+    <div class="cuisine-banner">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400&q=80" alt="Italian" />
+      <div class="banner-overlay">
+        <div>
+          <div class="cuisine-tag">Italian Cuisine</div>
+          <h3>La Cucina Italiana</h3>
+          <p>Pasta · Pizza · Risotto · Bruschetta</p>
+        </div>
+      </div>
+    </div>
+    <p class="cuisine-sub">Rustic, soul-warming recipes from the ancient kitchens of Italy</p>
+
+    <div class="sub-heading" data-category="starter">Starters</div>
+    <div class="cards-grid">
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&q=80" alt="Bruschetta" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.5 · 182 reviews</span></div>
+          <div class="card-name">Bruschetta al Pomodoro</div>
+          <p class="card-desc">Toasted sourdough rubbed with garlic, topped with fresh tomatoes, basil and fine olive oil.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Sourdough</span><span class="ing-chip">Tomatoes</span><span class="ing-chip">Garlic</span><span class="ing-chip">Basil</span><span class="ing-chip">Olive Oil</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">210</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">8g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">30g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">6g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹229 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://www.nonguiltypleasures.com/wp-content/uploads/2025/01/pesto-caprese-salad.jpg" alt="Caprese" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.7 · 214 reviews</span></div>
+          <div class="card-name">Caprese Salad</div>
+          <p class="card-desc">Buffalo mozzarella, heirloom tomatoes and fresh basil drizzled with aged balsamic.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Mozzarella</span><span class="ing-chip">Tomatoes</span><span class="ing-chip">Basil</span><span class="ing-chip">Balsamic</span><span class="ing-chip">Olive Oil</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">260</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">19g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">10g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">14g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹279 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="main">Main Course</div>
+    <div class="cards-grid">
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80" alt="Carbonara" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 312 reviews</span></div>
+          <div class="card-name">Spaghetti Carbonara</div>
+          <p class="card-desc">Silky egg sauce, crispy pancetta, aged Parmesan and freshly cracked black pepper.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Spaghetti</span><span class="ing-chip">Egg Yolks</span><span class="ing-chip">Pancetta</span><span class="ing-chip">Parmesan</span><span class="ing-chip">Black Pepper</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">620</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">24g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">72g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">28g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹449 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Margherita" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.6 · 287 reviews</span></div>
+          <div class="card-name">Margherita Pizza</div>
+          <p class="card-desc">Thin crispy crust with San Marzano tomatoes, fresh mozzarella and fragrant basil.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Pizza Dough</span><span class="ing-chip">San Marzano</span><span class="ing-chip">Mozzarella</span><span class="ing-chip">Basil</span><span class="ing-chip">Olive Oil</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">540</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">18g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">68g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">22g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹399 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&q=80" alt="Arrabbiata" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.3 · 198 reviews</span></div>
+          <div class="card-name">Penne Arrabbiata</div>
+          <p class="card-desc">Fiery tomato sauce with garlic, crushed red chilies and a drizzle of fine olive oil.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Penne</span><span class="ing-chip">Tomatoes</span><span class="ing-chip">Garlic</span><span class="ing-chip">Red Chili</span><span class="ing-chip">Parsley</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">480</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">12g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">78g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">14g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹349 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&q=80" alt="Parmigiana" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 421 reviews</span></div>
+          <div class="card-name">Chicken Parmigiana</div>
+          <p class="card-desc">Crispy breaded chicken crowned with rich marinara and bubbling golden mozzarella.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Chicken</span><span class="ing-chip">Breadcrumbs</span><span class="ing-chip">Marinara</span><span class="ing-chip">Mozzarella</span><span class="ing-chip">Parmesan</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">710</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">32g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">48g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">54g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹549 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="sweet">Sweet Dishes</div>
+    <div class="cards-grid">
+      <div class="card" data-category="sweet">
+        <div class="card-photo">
+          <img src="https://www.nestleprofessional.in/sites/default/files/2024-09/Panna-Cotta-756x471.jpg" alt="Panna Cotta" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 253 reviews</span></div>
+          <div class="card-name">Panna Cotta</div>
+          <p class="card-desc">Silky vanilla cream set to a soft tremble, adorned with a vivid berry coulis.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Heavy Cream</span><span class="ing-chip">Vanilla Bean</span><span class="ing-chip">Gelatin</span><span class="ing-chip">Sugar</span><span class="ing-chip">Berry Coulis</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">320</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">22g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">28g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">4g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹249 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="sweet">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" alt="Tiramisu" />
+          <span class="photo-badge badge-red">Italian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 388 reviews</span></div>
+          <div class="card-name">Classic Tiramisu</div>
+          <p class="card-desc">Espresso-soaked ladyfingers layered with lush mascarpone cream and fine cocoa dust.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Mascarpone</span><span class="ing-chip">Ladyfingers</span><span class="ing-chip">Espresso</span><span class="ing-chip">Egg Yolks</span><span class="ing-chip">Cocoa</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">380</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">24g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">34g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">8g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹299 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  <div class="cuisine-block" id="chinese">
+    <div class="cuisine-accent blue"></div>
+    <div class="cuisine-banner">
+      <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1400&q=80" alt="Chinese" />
+      <div class="banner-overlay">
+        <div>
+          <div class="cuisine-tag">Chinese Cuisine</div>
+          <h3>The Dragon's Kitchen</h3>
+          <p>Dim Sum · Noodles · Stir Fry</p>
+        </div>
+      </div>
+    </div>
+    <p class="cuisine-sub">Bold wok-fired flavours from the ancient kitchens of China</p>
+
+    <div class="sub-heading" data-category="starter">Starters</div>
+    <div class="cards-grid">
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://www.justataste.com/wp-content/uploads/2012/12/chicken-spring-rolls-2024.jpg" alt="Spring Rolls" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.2 · 145 reviews</span></div>
+          <div class="card-name">Crispy Spring Rolls</div>
+          <p class="card-desc">Golden-fried rolls filled with glass noodles, cabbage and fragrant mushrooms.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Rice Paper</span><span class="ing-chip">Glass Noodles</span><span class="ing-chip">Cabbage</span><span class="ing-chip">Mushrooms</span><span class="ing-chip">Ginger</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">290</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">13g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">36g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">7g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹249 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&q=80" alt="Dim Sum" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.7 · 256 reviews</span></div>
+          <div class="card-name">Steamed Dim Sum</div>
+          <p class="card-desc">Delicate dumplings steamed to perfection, served with ginger soy dipping sauce.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Rice Wrapper</span><span class="ing-chip">Minced Pork</span><span class="ing-chip">Ginger</span><span class="ing-chip">Scallions</span><span class="ing-chip">Soy Sauce</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">310</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">9g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">38g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">18g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹329 <small>/ basket</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="main">Main Course</div>
+    <div class="cards-grid">
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=600&q=80" alt="Kung Pao" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 334 reviews</span></div>
+          <div class="card-name">Kung Pao Chicken</div>
+          <p class="card-desc">Fiery wok stir-fry with tender chicken, roasted peanuts and Sichuan peppercorns.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Chicken</span><span class="ing-chip">Peanuts</span><span class="ing-chip">Dried Chilies</span><span class="ing-chip">Sichuan Pepper</span><span class="ing-chip">Garlic</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">520</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">26g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">30g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">42g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹449 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80" alt="Fried Rice" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.4 · 179 reviews</span></div>
+          <div class="card-name">Vegetable Fried Rice</div>
+          <p class="card-desc">Wok-tossed jasmine rice with seasonal vegetables and aromatic sesame oil.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Jasmine Rice</span><span class="ing-chip">Carrot</span><span class="ing-chip">Peas</span><span class="ing-chip">Egg</span><span class="ing-chip">Sesame Oil</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">420</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">11g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">65g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">12g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹279 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLK4MJEpA4XZ05YrdI8l1OmXRZFyy8o1yFw&s" alt="Chow Mein" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.3 · 162 reviews</span></div>
+          <div class="card-name">Vegetable Chow Mein</div>
+          <p class="card-desc">Stir-fried egg noodles with crisp vegetables in a savory soy-ginger sauce.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Egg Noodles</span><span class="ing-chip">Cabbage</span><span class="ing-chip">Bean Sprouts</span><span class="ing-chip">Soy Sauce</span><span class="ing-chip">Ginger</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">390</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">10g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">62g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">11g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹299 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="sweet">Sweet Dishes</div>
+    <div class="cards-grid">
+      <div class="card" data-category="sweet">
+        <div class="card-photo">
+          <img src="https://www.dessertnowdinnerlater.com/wp-content/uploads/2017/01/Chinese-Mango-Pudding-1.jpg" alt="Mango Pudding" />
+          <span class="photo-badge badge-blue">Chinese</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.7 · 198 reviews</span></div>
+          <div class="card-name">Mango Pudding</div>
+          <p class="card-desc">Velvety Hong Kong–style mango pudding crowned with fresh mango and cream.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Mango Puree</span><span class="ing-chip">Gelatin</span><span class="ing-chip">Evap. Milk</span><span class="ing-chip">Sugar</span><span class="ing-chip">Fresh Mango</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">240</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">6g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">42g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">5g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹199 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  <div class="cuisine-block" id="indian">
+    <div class="cuisine-accent gold"></div>
+    <div class="cuisine-banner">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1400&q=80" alt="Indian" />
+      <div class="banner-overlay">
+        <div>
+          <div class="cuisine-tag">Indian Cuisine</div>
+          <h3>Spice of the Subcontinent</h3>
+          <p>Curry · Biryani · Tandoor · Dal</p>
+        </div>
+      </div>
+    </div>
+    <p class="cuisine-sub">Aromatic spices and rich curries from across the Indian subcontinent</p>
+
+    <div class="sub-heading" data-category="starter">Starters</div>
+    <div class="cards-grid">
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg" alt="Samosa" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 512 reviews</span></div>
+          <div class="card-name">Aloo Samosa</div>
+          <p class="card-desc">Crispy pastry triangles filled with spiced potatoes, peas and served with mint chutney.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Pastry Dough</span><span class="ing-chip">Potato</span><span class="ing-chip">Peas</span><span class="ing-chip">Cumin</span><span class="ing-chip">Mint Chutney</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">280</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">14g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">34g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">6g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹129 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="starter">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Tandoori" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 467 reviews</span></div>
+          <div class="card-name">Tandoori Chicken</div>
+          <p class="card-desc">Chicken marinated in yogurt and spices, charred to perfection in a clay oven.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Chicken</span><span class="ing-chip">Yogurt</span><span class="ing-chip">Tandoori Masala</span><span class="ing-chip">Lemon</span><span class="ing-chip">Ginger</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">340</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">14g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">8g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">44g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹349 <small>/ half</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="main">Main Course</div>
+    <div class="cards-grid">
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 528 reviews</span></div>
+          <div class="card-name">Butter Chicken</div>
+          <p class="card-desc">Succulent chicken in a velvety tomato-cream sauce, finished with kasuri methi.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Chicken</span><span class="ing-chip">Tomato</span><span class="ing-chip">Cream</span><span class="ing-chip">Butter</span><span class="ing-chip">Kasuri Methi</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">560</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">28g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">22g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">48g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹499 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Paneer Tikka" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.7 · 390 reviews</span></div>
+          <div class="card-name">Paneer Tikka Masala</div>
+          <p class="card-desc">Chargrilled cottage cheese in a smoky, aromatic masala gravy with capsicum.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Paneer</span><span class="ing-chip">Tomatoes</span><span class="ing-chip">Yogurt</span><span class="ing-chip">Tandoori Masala</span><span class="ing-chip">Capsicum</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">490</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">30g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">18g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">26g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹429 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Biryani" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot nonveg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 612 reviews</span></div>
+          <div class="card-name">Biryani Royale</div>
+          <p class="card-desc">Fragrant saffron basmati with aromatic spices and slow-cooked meat dum-style.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Basmati Rice</span><span class="ing-chip">Saffron</span><span class="ing-chip">Biryani Masala</span><span class="ing-chip">Fried Onion</span><span class="ing-chip">Mint</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">680</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">22g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">82g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">38g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹549 <small>/ plate</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="main">
+        <div class="card-photo">
+          <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2019/11/Dal-Makhani.jpg" alt="Dal Makhani" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.5 · 274 reviews</span></div>
+          <div class="card-name">Dal Makhani</div>
+          <p class="card-desc">Slow-simmered whole black lentils enriched with butter, cream and secret spices.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Black Lentils</span><span class="ing-chip">Butter</span><span class="ing-chip">Cream</span><span class="ing-chip">Tomatoes</span><span class="ing-chip">Cumin</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">380</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">14g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">44g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">18g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹349 <small>/ bowl</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-heading" data-category="sweet">Sweet Dishes</div>
+    <div class="cards-grid">
+      <div class="card" data-category="sweet">
+        <div class="card-photo">
+          <img src="https://almondhouse.com/cdn/shop/files/1_IMG_9491_1e1968b7-b144-49ba-a4ed-2659e95a3bcb.jpg?v=1703680462" alt="Gulab Jamun" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 601 reviews</span></div>
+          <div class="card-name">Gulab Jamun</div>
+          <p class="card-desc">Soft milk-solid dumplings soaked in rose-scented sugar syrup, served warm.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Milk Powder</span><span class="ing-chip">Flour</span><span class="ing-chip">Sugar Syrup</span><span class="ing-chip">Rose Water</span><span class="ing-chip">Cardamom</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">310</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">10g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">48g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">5g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹149 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="sweet">
+        <div class="card-photo">
+          <img src="https://sinfullyspicy.com/wp-content/uploads/2021/08/1200-by-1200-images.jpg" alt="Rice Kheer" />
+          <span class="photo-badge badge-gold">Indian</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.7 · 318 reviews</span></div>
+          <div class="card-name">Rice Kheer</div>
+          <p class="card-desc">Creamy rice pudding perfumed with saffron, cardamom, pistachios and almonds.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Basmati Rice</span><span class="ing-chip">Full-Fat Milk</span><span class="ing-chip">Sugar</span><span class="ing-chip">Saffron</span><span class="ing-chip">Pistachios</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">290</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">9g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">44g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">8g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹169 <small>/ bowl</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  <div class="cuisine-block" id="desserts">
+    <div class="cuisine-accent pink"></div>
+    <div class="cuisine-banner">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=1400&q=80" alt="Desserts" />
+      <div class="banner-overlay">
+        <div>
+          <div class="cuisine-tag">Dessert Corner</div>
+          <h3>Sweet Endings</h3>
+          <p>Cakes · Ice Cream · Waffles · Pastries</p>
+        </div>
+      </div>
+    </div>
+    <p class="cuisine-sub">Irresistible sweet finales to your perfect world-cuisine journey</p>
+
+    <div class="sub-heading" data-category="dessert">Desserts</div>
+    <div class="cards-grid">
+      <div class="card" data-category="dessert">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80" alt="Lava Cake" />
+          <span class="photo-badge badge-pink">Dessert</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 498 reviews</span></div>
+          <div class="card-name">Chocolate Lava Cake</div>
+          <p class="card-desc">Warm dark chocolate cake with a molten centre, paired with vanilla ice cream.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Dark Chocolate</span><span class="ing-chip">Butter</span><span class="ing-chip">Eggs</span><span class="ing-chip">Flour</span><span class="ing-chip">Vanilla Ice Cream</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">480</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">28g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">52g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">8g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹299 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="dessert">
+        <div class="card-photo">
+          <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/True-Belgian-Waffles_EXPS_FT24_4869_JR_0214_3.jpg" alt="Belgian Waffles" />
+          <span class="photo-badge badge-pink">Dessert</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 367 reviews</span></div>
+          <div class="card-name">Belgian Waffles</div>
+          <p class="card-desc">Crispy golden waffles crowned with whipped cream, strawberries and maple syrup.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Waffle Batter</span><span class="ing-chip">Whipped Cream</span><span class="ing-chip">Strawberries</span><span class="ing-chip">Maple Syrup</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">420</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">18g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">58g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">7g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹279 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="dessert">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" alt="Ice Cream Sundae" />
+          <span class="photo-badge badge-pink">Dessert</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 441 reviews</span></div>
+          <div class="card-name">Ice Cream Sundae</div>
+          <p class="card-desc">Three generous scoops with hot fudge, toasted nuts, cherries and whipped cream.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Ice Cream</span><span class="ing-chip">Hot Fudge</span><span class="ing-chip">Whipped Cream</span><span class="ing-chip">Nuts</span><span class="ing-chip">Cherry</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">520</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">26g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">62g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">8g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹249 <small>/ serving</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="dessert">
+        <div class="card-photo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnXwoSJ9_04pQx9UWaaixZ2w_H_yVesS5pw&s" alt="Cheesecake" />
+          <span class="photo-badge badge-pink">Dessert</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 376 reviews</span></div>
+          <div class="card-name">New York Cheesecake</div>
+          <p class="card-desc">Dense creamy cheesecake on a buttery biscuit base with blueberry compote.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Cream Cheese</span><span class="ing-chip">Digestive Biscuits</span><span class="ing-chip">Eggs</span><span class="ing-chip">Sugar</span><span class="ing-chip">Blueberry</span></div>
+          <div class="card-section-label">Nutrition per serving</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">450</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">30g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">38g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">9g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹319 <small>/ slice</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  
+  <div class="cuisine-block" id="drinks">
+    <div class="cuisine-accent teal"></div>
+    <div class="cuisine-banner">
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1400&q=80" alt="Drinks" />
+      <div class="banner-overlay">
+        <div>
+          <div class="cuisine-tag">Beverage Bar</div>
+          <h3>Liquid Refreshment</h3>
+          <p>Juices · Mocktails · Sodas · Lassi</p>
+        </div>
+      </div>
+    </div>
+    <p class="cuisine-sub">Refreshing beverages crafted to complete your dining experience</p>
+
+    <div class="sub-heading" data-category="drink">Beverages</div>
+    <div class="cards-grid">
+      <div class="card" data-category="drink">
+        <div class="card-photo">
+          <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2019/05/Healthy-Mango-Lassi-Recipe.jpg" alt="Mango Lassi" />
+          <span class="photo-badge badge-teal">Drinks</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.9 · 441 reviews</span></div>
+          <div class="card-name">Mango Lassi</div>
+          <p class="card-desc">Thick chilled blend of Alphonso mango, fresh yogurt and fragrant cardamom.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Mango</span><span class="ing-chip">Yogurt</span><span class="ing-chip">Milk</span><span class="ing-chip">Sugar</span><span class="ing-chip">Cardamom</span></div>
+          <div class="card-section-label">Nutrition per glass</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">220</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">4g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">38g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">7g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹149 <small>/ glass</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="drink">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Mojito" />
+          <span class="photo-badge badge-teal">Drinks</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 367 reviews</span></div>
+          <div class="card-name">Virgin Mojito</div>
+          <p class="card-desc">Muddled fresh mint, zesty lime, sugar syrup and sparkling soda over crushed ice.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Fresh Mint</span><span class="ing-chip">Lime</span><span class="ing-chip">Sugar Syrup</span><span class="ing-chip">Soda</span><span class="ing-chip">Ice</span></div>
+          <div class="card-section-label">Nutrition per glass</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">90</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">0g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">22g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">0g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹129 <small>/ glass</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="drink">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold Coffee" />
+          <span class="photo-badge badge-teal">Drinks</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★★</span><span class="rating-count">4.8 · 299 reviews</span></div>
+          <div class="card-name">Cold Coffee</div>
+          <p class="card-desc">Rich espresso blended with chilled milk and silky vanilla ice cream.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Espresso</span><span class="ing-chip">Chilled Milk</span><span class="ing-chip">Vanilla Ice Cream</span><span class="ing-chip">Sugar</span><span class="ing-chip">Ice</span></div>
+          <div class="card-section-label">Nutrition per glass</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">280</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">10g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">36g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">8g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹179 <small>/ glass</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="drink">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=600&q=80" alt="Lime Soda" />
+          <span class="photo-badge badge-teal">Drinks</span><span class="veg-dot veg">●</span>
+        </div>
+        <div class="card-body">
+          <div class="card-rating"><span class="stars-filled">★★★★☆</span><span class="rating-count">4.4 · 210 reviews</span></div>
+          <div class="card-name">Fresh Lime Soda</div>
+          <p class="card-desc">Freshly squeezed lime with sweet-salty seasoning and perfectly chilled soda water.</p>
+          <div class="card-section-label">Ingredients</div>
+          <div class="ing-chips"><span class="ing-chip">Fresh Lime</span><span class="ing-chip">Soda Water</span><span class="ing-chip">Sugar</span><span class="ing-chip">Salt</span><span class="ing-chip">Cumin Powder</span></div>
+          <div class="card-section-label">Nutrition per glass</div>
+          <div class="nut-grid">
+            <div class="nut-cell nut-cal"><span class="nut-val">60</span><span class="nut-key">Cal</span></div>
+            <div class="nut-cell nut-fat"><span class="nut-val">0g</span><span class="nut-key">Fat</span></div>
+            <div class="nut-cell nut-carb"><span class="nut-val">14g</span><span class="nut-key">Carbs</span></div>
+            <div class="nut-cell nut-prot"><span class="nut-val">0g</span><span class="nut-key">Protein</span></div>
+          </div>
+          <div class="card-foot">
+            <div class="price-tag">₹99 <small>/ glass</small></div>
+            <button class="add-btn">+ Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  
+  <div class="reviews-section" id="reviews">
+    <div class="reviews-header">
+      <h2>Guest Reviews</h2>
+      <p>What our guests say about Saffron &amp; Spice</p>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid">
+      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">The Butter Chicken was divine — so creamy and perfectly spiced. Biryani Royale was the undisputed highlight of our evening.</p><div class="r-name">— Priya Sharma, Delhi</div></div>
+      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">Best Dim Sum outside a five-star hotel. Spring Rolls were shatteringly crispy. The Chocolate Lava Cake was a perfect finish.</p><div class="r-name">— Rahul Verma, Mumbai</div></div>
+      <div class="review-card"><div class="r-stars">★★★★☆</div><p class="r-text">Carbonara was authentic and rich. Tiramisu was light and not overly sweet. The nutrition info on each dish is a brilliant touch.</p><div class="r-name">— Anjali Kapoor, Bangalore</div></div>
+      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">Tandoori Chicken starter and Dal Makhani main — absolute perfection. The Gulab Jamun was melt-in-the-mouth. What a meal!</p><div class="r-name">— Arjun Singh, Chandigarh</div></div>
+      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">Came for the Virgin Mojito, stayed for the food! Belgian Waffles were incredible. The tab filters make ordering so easy.</p><div class="r-name">— Meera Nair, Kochi</div></div>
+      <div class="review-card"><div class="r-stars">★★★★☆</div><p class="r-text">Caprese Salad and Margherita Pizza — an Italian duo done with rare precision. Panna Cotta was silky perfection. Lovely evening.</p><div class="r-name">— Kavita Patel, Ahmedabad</div></div>
+    </div>
+
+    <p class="review-form-title">Leave Your Review</p>
+    <div class="form-row">
+      <input type="text" id="rName" placeholder="Your Name" />
+      <input type="text" id="rDish" placeholder="Dish You Tried" />
+    </div>
+    <div class="star-row">
+      <p>Your Rating</p>
+      <label id="s1">★</label>
+      <label id="s2">★</label>
+      <label id="s3">★</label>
+      <label id="s4">★</label>
+      <label id="s5">★</label>
+    </div>
+    <textarea class="review-textarea" id="rText" placeholder="Tell us about your experience..."></textarea>
+      <button class="submit-btn">Submit Review</button>
+    </div>
+
+  </div>
+
+<footer>
+  <div class="footer-logo">Saffron <span>&amp;</span> Spice</div>
+  <div class="footer-tagline">✦ &nbsp; Spice Up Your Senses &nbsp; ✦</div>
+  <nav class="footer-nav">
+    <a>Italian</a>
+    <a>Chinese</a>
+    <a>Indian</a>
+    <a>Desserts</a>
+    <a>Drinks</a>
+    <a>Reviews</a>
+  </nav>
+  <div class="footer-copy">© 2024 Saffron &amp; Spice · Est. 2024 · Fine World Dining · Made with ❤️ and a lot of spice</div>
+</footer>
+</body>
+<script src="tanvi.js.js"></script>
+</html>
